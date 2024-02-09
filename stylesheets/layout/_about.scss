@@ -1,0 +1,23 @@
+.about{
+&__me{
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  &__hobby{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   &--section{
+     display:flex;
+        flex-direction: column;
+        align-items: center;
+     & h3{
+       display: flex;
+       align-items: center;
+     }
+
+
+   }
+  }
+}

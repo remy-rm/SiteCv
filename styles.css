@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  color: #3fbfdb;
+  text-decoration: underline #1c8198;
+}
+
+li {
+  list-style-type: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2 {
+  background: #3fbfdb;
+  margin: auto;
+  font-size: 2.5rem;
+  border-radius: 15px 15px 0 0;
+  text-align: center;
+  padding: 10px;
+  filter: drop-shadow(0 1mm 6mm #3fbfdb);
+}
+
+.block {
+  background: rgba(255, 255, 255, 0.6);
+  padding: 20px;
+  margin: 20px;
+  border-radius: 25px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+p {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  text-align: center;
+  margin: 0;
+}
+
+.container {
+  padding-bottom: 167px;
+  max-width: 1500px;
+  margin: auto;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+span {
+  color: #3fbfdb;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 1000px) {
+  p, a, h3 {
+    font-size: 1rem;
+    line-height: 2.5;
+  }
+  h1, h2 {
+    font-size: 2rem;
+  }
+  .desktop {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .block {
+    width: 44%;
+  }
+}
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+h1, h2 {
+  font-family: "Indie Flower", cursive;
+  margin: 0;
+  line-height: 1.2;
+  color: white;
+  font-weight: 400;
+}
+
+.header {
+  display: flex;
+}
+.header__picture {
+  flex: 1;
+}
+.header__picture img {
+  border-radius: 0 0 25px 25px;
+  width: 100%;
+  object-fit: cover;
+  max-height: 600px;
+}
+.header__desc {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+}
+.header__desc p {
+  margin: 15px;
+}
+.header__desc--cv {
+  flex-grow: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  max-width: 300px;
+  text-align: center;
+  margin: auto;
+}
+.header__desc--cv img {
+  width: 100%;
+}
+.header__desc--cv--btn {
+  background-color: #3fbfdb;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  position: relative;
+  top: -55px;
+  text-align: center;
+  align-self: stretch;
+}
+.header__desc--cv--btn:hover {
+  background-color: #24a6c3;
+  transform: scale(1.1);
+}
+
+.navBar {
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  border-radius: 25px 25px 0 0;
+  border: #3fbfdb 7px solid;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  z-index: 1;
+}
+.navBar ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
+}
+.navBar__icon {
+  width: 80px;
+}
+.navBar a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #3fbfdb;
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width: 1000px) {
+  .navBar {
+    position: sticky;
+    top: 0;
+    border: 0;
+    border-radius: 0;
+    width: 100%;
+  }
+  .navBar ul {
+    justify-content: flex-end;
+  }
+  .navBar a {
+    margin-left: 15px;
+  }
+  .navBar img {
+    width: 25px;
+  }
+}
+.about__me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about__hobby {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about__hobby--section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about__hobby--section h3 {
+  display: flex;
+  align-items: center;
+}
+
+.competence {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.competence__item {
+  flex: 0 0 calc(50% - 20px);
+  text-align: center;
+}
+
+@media screen and (min-width: 1000px) {
+  .competence__item img {
+    width: 50px;
+  }
+}
+.contact__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-direction: column;
+}
+
+body {
+  background: rgb(0, 255, 209);
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(141deg, rgba(0, 255, 209, 0.71) 19%, rgba(63, 191, 219, 0.77) 45%, rgba(63, 191, 219, 0.77) 55%, rgba(0, 255, 209, 0.77) 78%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/*# sourceMappingURL=styles.css.map */

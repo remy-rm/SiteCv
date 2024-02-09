@@ -1,0 +1,13 @@
+@mixin button {
+
+        background-color: $primaryColor;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 25px;
+        &:hover {
+                background-color: darken($primaryColor, 10%);
+                transform: scale(1.1);
+        }
+
+}

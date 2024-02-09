@@ -1,0 +1,19 @@
+.competence{
+
+  display: flex;
+    flex-wrap: wrap;
+  align-items: center;
+  &__item{
+    flex: 0 0 calc(50% - 20px);
+    text-align: center;
+  }
+
+}
+@media screen  and (min-width: 1000px){
+  .competence{
+    &__item img{
+      width: 50px;
+    }
+  }
+
+}
